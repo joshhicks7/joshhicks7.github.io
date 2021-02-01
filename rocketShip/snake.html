@@ -1,0 +1,37 @@
+<!doctype HTML>
+
+<html>
+<head ><title>Josh's Snake File</title><link rel = "stylesheet" type = "text/css" href = "./Files/Snake.css" /></head>
+	
+	<body onload = "setUp()" onkeydown = "go(event)" onmousemove = "mouseMove()">
+		<div id = "GameContainer">
+			<div id = "Background">
+				<div id = "Food"></div>
+				<div id = "SnakeContainer">
+					<div id = "Snake"></div>
+				</div>
+				
+			</div>
+			<div id = "Bottom">
+					<div id = "Score"></div>
+					<div id = "EnemyCount"></div>
+					<div id = "HighScore"></div>
+					<div id = "Buttons">
+						<button onclick = "change('u')" id = "U"></button>
+						<button onclick = "change('d')" id = "D"></button>
+						<button onclick = "change('l')" id = "L"></button>
+						<button onclick = "change('r')" id = "R"></button>
+					</div> 
+				</div>
+			<div id = "paused">
+				<div style = "text-align:center; color:white; font-weight:bold"> Press The Play Button to Play the Game</div>
+				<div id = "play" onclick = "pause()" >PLAY</div>
+			</div>
+		</div>
+				
+	</body>
+	
+	<script src = "./Files/SnakeScript.js"></script>
+	<script src = "./Files/ActionScript.js"></script>
+	<script src = "./Files/keyInputs.js"></script>
+</html>
