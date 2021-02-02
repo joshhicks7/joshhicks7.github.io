@@ -3,10 +3,6 @@
 	display:flex;
 }
 
-h1
-{	
-	margin:auto;
-}
 
 a
 {
@@ -24,9 +20,9 @@ body
 	background-color: grey;
 }
 
-td
+.b
 {
-	width:100px;
+	width:500px;
 	text-size:50px;
 	text-align:center;
 }

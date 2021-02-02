@@ -97,7 +97,7 @@ function move()
 
     if(px < 0)
     {
-      px = canv.width;
+      px = canv.width - psx;
     }
 
     if(px > canv.width - psx)
