@@ -7,3 +7,17 @@ h1
 {	
 	margin:auto;
 }
+
+a, body
+{
+	color:white;
+	text-decoration:none;
+	font-weight:bold;
+	margin:auto;
+}
+td
+{
+	width:100px;
+	text-size:50px;
+	text-align:center;
+}
