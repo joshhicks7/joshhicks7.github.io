@@ -1,20 +1,22 @@
 <!DOCTYPE HTML>
 <html>
 	<head><title>Gallon-Feet Converter</title></head>
-
-	<body style = "background-color:cyan" onkeydown = "go(event)">
-		<table>
-			<tbody id = "table">
-				<tr class = "con" id = "con1">
-					<td><input type="text" id = "fx"> x</td>
-					<td><input type="text" id = "fy"> x</td>
-					<td><input type="text" id = "fz"></td>
-					<td id = "click"><button onclick = "calc('con1')" id = "e1">=</button></td>
-					<td id = "cubFeet"></td>
-					<td id = "gallons"></td>
-				</tr>
-			</tbody>
-		</table>
+	<link rel="stylesheet" href="./Files/css/stylesheet.css">
+	<body onkeydown = "go(event)">
+		<div class = "tdiv">
+			<table>
+				<tbody id = "table">
+					<tr class = "con" id = "con1">
+						<td><input type="text" id = "fx"> x</td>
+						<td><input type="text" id = "fy"> x</td>
+						<td><input type="text" id = "fz"></td>
+						<td id = "click"><button onclick = "calc('con1')" id = "e1">=</button></td>
+						<td id = "cubFeet"></td>
+						<td id = "gallons"></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
 		<button onclick = "oneMore()"> ONE MORE</button>
 	</body>
 	<script src="./Files/Javascript/generator.js"></script>

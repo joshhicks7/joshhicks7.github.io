@@ -1,0 +1,23 @@
+.tdiv
+{
+	display:flex;
+	
+}
+
+body
+{
+	background-color:#3f3f3f;
+}
+table
+{
+	margin:auto;
+}
+
+button
+{
+	text-align:center;
+}
+td
+{
+	color:white;
+}
