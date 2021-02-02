@@ -4,17 +4,23 @@
 <link rel="stylesheet" href=".\Files\css\stylesheet.css"></link>
 	<body style = "background-color: white">
 		<div style = "background-color:blue;">
-			<div class = "Title"style = "height: 100px">
+			<div class = "Title">
 				<h1 > WELCOME TO MY INDEX PAGE LADIES AND GENTS</h1>
 			</div>
 			<table width = "100%">
-				<tr height = "100px">
-					<td><a href = .\Gallon-Feet-Conversion>Gallon-Feet-Conversion</a></td>
-					<td><a href = .\WordEscape>Word Escape</a></td>
-					<td><a href = .\RocketShip>Rocket Ship</a></td>     				
+				<tr>
+					<td><button onclick = "generate('./Gallon-Feet-Conversion')">Gallon-Feet-Conversion</button></td>
+					<td><button onclick = "generate('./WordEscape')">Word Escape</button></td>
+					<td><button onclick = "generate('./RocketShip')">Rocket Ship</button></td>		
 				</tr>
 			</table>
 		</div>
+		<iframe id = "frame" src=".\Gallon-Feet-Conversion\index.html"></iframe>
+		<!--
+		<iframe src=".\WordEscape\index.html"></iframe>
+		<iframe src=".\RocketShip\index.html"></iframe>
+	-->
 	</body>
 </html>
+<script src = ".\Files\Javascript\controls.js"></script>
 
