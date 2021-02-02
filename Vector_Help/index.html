@@ -1,0 +1,221 @@
+<!DOCTYPE HTML>
+<!--html>body>div>table>tr*2>td*3>input-->
+<html>
+<title>Josh's Vector Help</title>
+<style>
+	td
+	{
+		width:150px;
+	}
+</style>
+	<body style = "background-color:white">
+		<div>
+			<table>
+				<THEAD></THEAD>
+				<tr style = "column-span: 3; text-align: center; font-size:50px;">JOSH'S VECTOR HELP</tr>
+				<tr>
+					<td>Vector 1 (V)</td>
+					<td><input type="text" id = "dotProd_x1"></td>
+					<td><input type="text" id = "dotProd_y1"></td>
+					<td><input type="text" id = "dotProd_z1"></td>
+				</tr>
+				<tr>
+					<td>Vector 2 (U)</td>
+					<td><input type="text" id = "dotProd_x2"></td>
+					<td><input type="text" id = "dotProd_y2"></td>
+					<td><input type="text" id = "dotProd_z2"></td>
+				</tr>
+				<tr class = "planeStuff" style = "visibility: hidden">
+						<td>Vector 3 (P)</td>
+						<td><input type="text" id = "dotProd_x3"></td>
+						<td><input type="text" id = "dotProd_y3"></td>
+						<td><input type="text" id = "dotProd_z3"></td>
+				</tr>
+				
+			</table>
+			<tr>
+				<td>
+					<button onclick="Generate()">
+						GENERATE 
+					</button>
+				</td>
+				 GENERATE PLANE FOR ALL 3? <input type="checkbox" onclick="showPlanes() " id = "planeCheck">
+			</tr>
+			<table border="2px" width = "50%">
+				<tr>
+					<td>V + U</td>
+					<td id = "v+u"></td>
+				</tr>
+				<tr>
+					<td>U - V</td>
+					<td id = "u-v"></td>
+				</tr>
+				<tr>
+					<td>V - U</td>
+					<td id = "v-u"></td>
+				</tr>
+				<tr>
+					<td>V -> U</td>
+					<td id = "v->u"></td>
+				</tr>
+				<tr>
+					<td>V <sup style="font-size: 25px">.</sup> U</td>
+					<td id = "v.u"></td>
+				</tr>
+				<tr>
+					<td>V x U</td>
+					<td id = "vxu"></td>
+				</tr>
+				<tr>
+					<td>U x V</td>
+					<td id = "uxv"></td>
+				</tr>
+				<tr class = "planeStuff" style = "visibility: hidden">
+					<td>Plane through P U V</td>
+					<td id = "pt3"></td>
+				</tr>
+
+			</table>
+		</div>
+	</body>
+	<script type="text/javascript">
+
+
+		function Generate()
+		{
+			var x1 = parseFloat(document.getElementById("dotProd_x1").value);
+			var y1 = parseFloat(document.getElementById("dotProd_y1").value);
+			var z1 = parseFloat(document.getElementById("dotProd_z1").value);
+			var x2 = parseFloat(document.getElementById("dotProd_x2").value);
+			var y2 = parseFloat(document.getElementById("dotProd_y2").value);
+			var z2 = parseFloat(document.getElementById("dotProd_z2").value);
+
+			if(x1 == null) x1 = 0;
+			if(y1 == null) y1 = 0;
+			if(z1 == null) z1 = 0;
+			if(x2 == null) x2 = 0;
+			if(y2 == null) y2 = 0;
+			if(z2 == null) z2 = 0;
+
+			var v = new Vector(x1, y1, z1);
+			var u = new Vector(x2, y2, z2);
+
+			document.getElementById("v.u").innerHTML = DotProd(v,u);
+			document.getElementById("vxu").innerHTML = CrossProd(v,u);
+			document.getElementById("uxv").innerHTML = CrossProd(u,v);
+			document.getElementById("u-v").innerHTML = difference(u,v);
+			document.getElementById("v-u").innerHTML = difference(v,u);
+			document.getElementById("v+u").innerHTML = sum(v,u);
+			document.getElementById("v->u").innerHTML = magnitude(v,u);
+
+			if(showPlanes())
+			{
+				var x3 = parseFloat(document.getElementById("dotProd_x3").value);
+				var y3 = parseFloat(document.getElementById("dotProd_y3").value);
+				var z3 = parseFloat(document.getElementById("dotProd_z3").value);
+
+				if(x3 == null) x3 = 0;
+				if(y3 == null) y3 = 0;
+				if(z3 == null) z3 = 0;
+  				var p = new Vector(x3, y3, z3);
+
+				document.getElementById("pt3").innerHTML = planethrough3(v,u, p);
+			}
+		}
+
+
+		function DotProd(v, u)
+		{
+			return(((v.x * u.x) + (v.y * u.y) + (v.z * u.z)).toString());
+		}
+
+		function CrossProd(v,u)
+		{
+
+			return( new Vector(
+				(v.y * u.z) - (v.z * u.y),
+				(v.z * u.x) - (v.x * u.z),
+				(v.x * u.y) - (v.y * u.x)));
+		}
+
+		function difference(v,u)
+		{
+
+			return(new Vector(v.x - u.x, v.y - u.y, v.z - u.z));
+		}
+
+		function sum(v,u)
+		{
+
+			return(new Vector(u.x + v.x,u.y + v.y,u.z + v.z));
+		}
+
+		function magnitude(a, b)
+		{
+			a_b = difference(b, a);
+			return Math.sqrt((a_b.x * a_b.x) + (a_b.y * a_b.y) + (a_b.z * a_b.z));
+		}
+
+		function planethrough3(a, b, c)
+		{
+			a_b = difference(b, a);
+			a_c = difference(c, a);
+
+			cross = CrossProd(a_b, a_c);
+
+			// a_bxa_c dot [(x,y,z) - a] = 0
+			// cross dot (x - a.x, y - a.y, z - a.z) = 0
+			//  
+			return cross.toString() + "[(x,y,z) - " + a.toString() + "] = 0 <br>" +
+
+			cross.x + "(x - " + a.x + " ) + " +
+			cross.y + "(y - " + a.y + " ) + " +
+			cross.z + "(z - " + a.z + " ) = 0"; 
+		}
+
+		function project(a, b)
+		{
+			var c = DotProd(a,b)/DotProd(b,b);
+			return new Vector(b.x * c, b.y * c, b.z * c);
+		}
+
+		function showPlanes()
+		{
+			var cBox = document.getElementById("planeCheck");
+			var show = cBox.checked;
+			var el = document.getElementsByClassName("planeStuff");
+			if(show === true)
+			{
+				
+
+				for (var i = 0; i < el.length;i++) {
+					el[i].style.visibility = "visible";
+				}
+			}
+			else
+			{
+				for (var i = 0; i < el.length;i++) 
+				{
+					el[i].style.visibility ="hidden";
+				}
+				
+			}
+
+			return show;
+		}
+
+		function Vector(x, y, z)
+		{
+			this.x = x;
+			this.y = y;
+			this.z = z;
+		}
+
+		Vector.prototype.toString = function Vector2String()
+		{
+			return "(" + this.x + "," + this.y + "," + this.z + ")";
+		}
+
+	</script>
+
+</html>
