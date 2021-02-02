@@ -5,7 +5,7 @@ var bobby = 0;
 function go(event)
 {
 	var x = event.which|| event.keyCode;
-	console.log(x);
+	//console.log(x);
 	
 
 		//up
@@ -34,5 +34,5 @@ function SnakeMove(d)
 
 function mouseMove()
 {
-	console.log(window.event.clientX);
+	//console.log(window.event.clientX);
 }

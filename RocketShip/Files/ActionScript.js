@@ -31,9 +31,9 @@ setInterval(spawnEnemy, 1500);
 
 function shoot()
 {
-	
+	/*
 	var bullet = document.createElement("div");
-	bullet.id = "Bullet";
+	bullet.id = "Bullet" + bullets.length;
 	background.appendChild(bullet);
 	bullet.setAttribute('name', "Bullet");
 	
@@ -41,7 +41,7 @@ function shoot()
 	bullet.style.left = snake.style.left;
 	bullet.style.top = snake.style.top;
 	bullets.push(new Bullet(parseInt(snake.style.left), parseInt(snake.style.top), getDir()));
-	console.log(getDir());
+	//console.log(getDir());
 	
 		switch(getDir())
 		{
@@ -55,9 +55,10 @@ function shoot()
 			bullet.style.transform = "rotate(180deg)";
 			break;
 			default:
-			bullet.style.transform = "rotate(90deg)";
+			bullet.style.transform = "rotate(0deg)";
 			break;
 		}
+		*/
 	
 }
 
@@ -111,7 +112,7 @@ function EnemyMove()
 		enemyList[i].style.top = enemies[i].y + "px";
 		if(enemies[i].x <= 0)
 		{
-			delete("Enemy" + i);
+			document.getElementById("Enemy" + i).remove();
 		}
 	}
 	
@@ -123,23 +124,40 @@ function bulletMove()
 	
 	for(var i = 0; i < bullets.length; i++)
 	{
-		switch(bullets[i].d)
+		if(document.getElementById("Bullet" + i) != null)
 		{
-			case ("u"):
-			bullets[i].y -= bulletSpeed;
-			break;
-			case ("d"):
-			bullets[i].y += bulletSpeed;
-			break;
-			case ("l"):
-			bullets[i].x -= bulletSpeed;
-			break;
-			case ("r"):
-			bullets[i].x += bulletSpeed;
-			break;
+			switch(bullets[i].d)
+			{
+				case ("u"):
+				bullets[i].y -= bulletSpeed;
+				break;
+				case ("d"):
+				bullets[i].y += bulletSpeed;
+				break;
+				case ("l"):
+				bullets[i].x -= bulletSpeed;
+				break;
+				case ("r"):
+				bullets[i].x += bulletSpeed;
+				break;
+			}
+			b[i].style.left = bullets[i].x + "px";	
+			b[i].style.top = bullets[i].y + "px";
+
+			var x = parseInt(b[i].style.left);
+			var y = parseInt(b[i].style.top);
+			var w = background.offsetWidth;
+			var h = background.offsetHeight;
+
+			if( x >= w || x < 0 || y > h || y < 0 )
+			{
+				document.getElementById("Bullet" + i).remove();
+				bullets.splice(i , i + 1);
+				break;
+
+			}	
 		}
-		b[i].style.left = bullets[i].x + "px";	
-		b[i].style.top = bullets[i].y + "px";			
+	
 		//document.getElementsByName("Enemy")[i].style.left = enemies[i].x + "px";
 	}
 	

@@ -9,7 +9,7 @@
 		var background = document.getElementById("Background");
 		var highName = localStorage.getItem("highName");
 		var score = 0;
-		var name = "";
+		var name = "Elton John";
 		var highScore = 0.0;
 		var deltaTime = 10;
 		var deltaPos = 3.5;
@@ -32,6 +32,7 @@
 		{
 			checkHighScore();
 			turnPlayer(dir);
+			setPlayer();
 		}
 		
 		function isPlaying()
@@ -62,6 +63,11 @@
 					settingHighScore();
 					turnPlayer(dir);
 				}
+				else
+				{
+					turnPlayer("e");
+				}
+				
 			}
 			else
 			{
@@ -70,6 +76,12 @@
 
 		}
 		
+
+		function setPlayer()
+		{
+			snake.style.top = 0;
+			snake.style.left = 0;
+		}
 		function pause()
 		{
 			paused = !paused;
@@ -232,7 +244,6 @@
 			playing = false;
 			turnPlayer("e");
 			
-			
 			switch(m)
 			{
 
@@ -244,21 +255,28 @@
 				break;
 			}
 			
-			name = prompt("Please Enter your name: ", name);
+			setTimeout(function()
+			{
+				name = prompt("Please Enter your name: ", name);
+				if(name == null)
+				{
+					name = "Elton John";
+				}	
+				if(highScore > localStorage.getItem("highscore"))
+				{
+					endMessage += "\n WOOOOOOHOOOOOOOO CONGRATULATIONS " + name.toUpperCase() + " ON THE NEW HIGH SCORE!!!!!";
+					localStorage.setItem("highscore", highScore)
+					localStorage.setItem("highName", name);
+				}
+				else
+				{
+					endMessage += "\n Sorry " + name + ", but dude you suck.";
+				}
 				
-			if(highScore > localStorage.getItem("highscore"))
-			{
-				endMessage += "\n WOOOOOOHOOOOOOOO CONGRATULATIONS " + name.toUpperCase() + " ON THE NEW HIGH SCORE!!!!!";
-				localStorage.setItem("highscore", highScore)
-				localStorage.setItem("highName", name);
-			}
-			else
-			{
-				endMessage += "\n Sorry " + name + ", but dude you suck.";
-			}
-		
-			alert(endMessage);
-			location.reload();
+
+				alert(endMessage);
+				location.reload();
+			},500);
 		}
 		
 		function getDir()

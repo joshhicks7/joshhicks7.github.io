@@ -21,6 +21,7 @@ body
 	font-weight:bold;
 	margin:auto;
 	color:white;
+	background-color: grey;
 }
 
 td
@@ -32,7 +33,9 @@ td
 
 iframe
 {
-	width:100%;
+	width:75%;
 	height:90%;
 	border:none;
+	margin:auto;
+	display: block;
 }

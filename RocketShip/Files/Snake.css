@@ -39,8 +39,9 @@
 			background-size:100%;
 			border-radius:25%;
 			position:absolute;
+			background-repeat: no-repeat;
 		}
-		
+
 		#Tail
 		{
 			width:15px;
@@ -49,7 +50,7 @@
 			position:absolute;
 		}
 		
-		#Bullet
+		div[name = "Bullet"]
 		{
 			width:15px;
 			height:15px;
