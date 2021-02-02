@@ -8,13 +8,21 @@ h1
 	margin:auto;
 }
 
-a, body
+a
 {
 	color:white;
 	text-decoration:none;
 	font-weight:bold;
 	margin:auto;
 }
+
+body
+{
+	font-weight:bold;
+	margin:auto;
+	color:white;
+}
+
 td
 {
 	width:100px;
