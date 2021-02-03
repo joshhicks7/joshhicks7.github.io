@@ -19,7 +19,7 @@ function createEnemy()
 	{
 		var enemy = document.createElement("div");
 		document.getElementById("Game-Container").append(enemy);
-		enemy.style.top = "-250px";
+		enemy.style.top = "0px";
 		enemy.style.left = Math.round(Math.random() * (enemy.offsetWidth - 150)) + "px";
 		console.log(activeWords);
 		var word = getWord();
