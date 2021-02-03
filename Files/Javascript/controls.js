@@ -9,5 +9,5 @@ function generate(link)
 
 function changeText(link)
 {
-
+	
 }
