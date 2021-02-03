@@ -5,29 +5,59 @@ xv = yv = 0;
 psx = 15, psy = 0;
 trail = [];
 lx = 0, ly = 0;
-setInterval(game, 50);
-tail = 5;
 
+tail = 5;
+var port = new portal(0,0,0,0);
+
+setInterval(game, 50);
+setInterval(setPortal, 5000);
 window.onload = function()
 {
-  canv = document.getElementById("ca");
-  ctx = canv.getContext("2d");
+  setCanvas();
+
   document.addEventListener("keydown", keyPush);
   psx = canv.width / 25;
   psy = canv.height / 25;
   startPlayer();
   moveFood();
+  setPortal();
+
+
+
 }
 
+function setCanvas()
+{
+    canv = document.getElementById("ca");    
+    ctx = canv.getContext("2d");
+    dpi = window.devicePixelRatio;
+    sh = getComputedStyle(canv).getPropertyValue("height").slice(0,-2);
+    sw = getComputedStyle(canv).getPropertyValue("width").slice(0,-2);
+
+    canv.setAttribute("width", sw * dpi);
+    canv.setAttribute("height", sh * dpi);
+}
 
 function game()
 {
+  
+  checkFood();
+  checkPortal();
   move();
   drawCanvas();
   drawPlayer();
   drawFood();
+  drawPortal();
   writeScore();
   
+}
+
+function portal(x, y, nx, ny)
+{
+  this.x = x;
+  this.y = y;
+  this.nx = nx;
+  this.ny = ny;
 }
 
 function keyPush(e)
@@ -74,14 +104,22 @@ function keyPush(e)
   }
 }
 
+function adjust()
+{
+  px = Math.floor(px);
+  py = Math.floor(py);
+
+  ax = Math.floor(ax);
+  ax = Math.floor(ax);
+}
 
 function move()
 {
+
+  console.log("PX: " + px + " PY: " + py + " AX: " + ax + "AY: " + ay);
   if(xv != 0 || yv != 0)
   {
-    trail.push({x:px, y:py});
-    px = px + xv;
-    py = py + yv;
+
     
 
     while(trail.length > tail)
@@ -89,18 +127,14 @@ function move()
       trail.shift();
     }
 
-    if(px == ax && py == ay)
-    {
-      moveFood();
-      tail++;
-    }
+
 
     if(px < 0)
     {
       px = canv.width - psx;
     }
 
-    if(px > canv.width - psx)
+    if(px > canv.width - psy)
     {
       px = 0;
     }
@@ -124,38 +158,78 @@ function move()
       }
     }
 
+    trail.push({x:px, y:py});
+    px = px + xv;
+    py = py + yv;
+
     lx = xv;
     ly = yv;
   }
 
 }
 
+function checkFood()
+{
+    if(Math.floor(px) == Math.floor(ax) && Math.floor(py) == Math.floor(ay))
+    {
+      moveFood();
+      tail++;
+    }
+}
+
+function checkPortal()
+{
+    if(Math.floor(px) == Math.floor(port.x) && Math.floor(py) == Math.floor(port.y))
+    {      
+        px = port.nx;
+        py = port.ny;
+    }
+    else if(Math.floor(px) == Math.floor(port.nx) && Math.floor(py) == Math.floor(port.ny))
+    {      
+        px = port.x;
+        py = port.y;
+    }
+}
+
 function drawCanvas()
 {
-  ctx.fillStyle = "green";
+  ctx.fillStyle = "darkgrey";
   ctx.fillRect(0,0,canv.width, canv.height);
 }
 
 function drawPlayer()
 {
-  ctx.fillStyle = "blue";
-  //ctx.ellipsxe(x, y, 10, 10, 0, 0, 6.24, false);
-
-  ctx.fillRect(px, py, psx, psy);
-  //ctx.fill();
+     im = new Image();
+      im.src = "./Files/Images/cat.png"
+      ctx.drawImage(im, px, py, psx, psy);
 
   ctx.fillStyle = "cyan";
   for(var i = 0; i < trail.length; i++)
   {    
-    ctx.fillRect(trail[i].x, trail[i].y, psx, psy);
+      ctx.drawImage(im, trail[i].x, trail[i].y, psx, psy);
   }
 
 }
 
+function setPortal()
+{
+  port = newPortal();
+}
+
 function drawFood()
 {
-   ctx.fillStyle = "red";
-   ctx.fillRect(ax, ay, psx, psy);
+   im = new Image();
+   im.src = "./Files/Images/candy.png"
+   ctx.drawImage(im, ax, ay, psx, psy);
+}
+
+function drawPortal()
+{
+
+   im = new Image();
+   im.src = "./Files/Images/portal.png"
+   ctx.drawImage(im, port.x, port.y, psx, psy);
+   ctx.drawImage(im, port.nx, port.ny, psx, psy);
 }
 
 function moveFood()
@@ -163,6 +237,11 @@ function moveFood()
   ax = Math.floor(Math.random() * 25) * psx;
   ay = Math.floor(Math.random() * 25) * psy;
 
+}
+
+function newPortal()
+{
+  return new portal(Math.floor(Math.random() * 25) * psx, Math.floor(Math.random() * 25) * psy,Math.floor(Math.random() * 25) * psx , Math.floor(Math.random() * 25) * psy);
 }
 
 function startPlayer()
@@ -174,6 +253,7 @@ function startPlayer()
 
 function writeScore()
 {
+  ctx.fillStyle = "white";
   ctx.font = "30px Arial";  
   ctx.textAlign = "center";
   ctx.fillText(tail, canv.width /2, 100);
