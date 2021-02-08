@@ -17,7 +17,7 @@
 	background: clear;
 }
 
-#Main_Content, #ResulsHolder
+#Main_Content, #ResultsHolder
 {
 	display: flex;
 	justify-content: flex-start;

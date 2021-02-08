@@ -142,10 +142,13 @@ function newResultsPerson(p1, p2)
 {
 	var id = "p" + p1 + "p" + p2;
 	var temp = document.getElementById("resultPersonTemplate").getElementsByTagName("script")[0].innerHTML;
-	temp = temp.replace("available", getPersonName(p1) + " - " + getPersonName(p2) + " AVAILABILITIES");
+	temp = temp.replace("available", getPersonName(p1) + " - " + getPersonName(p2));
 	temp = temp.replace("p1p2", id);
-	var doc = document.getElementById("Calculations").getElementsByTagName("div")[0].appendChild(document.createElement("div"));
+	var doc = document.getElementById("ResultsHolder").appendChild(document.createElement("div"));
 	doc.innerHTML = temp;
+	doc.class = "ResultHolder";
+	var d = document.getElementById("ResultsHolder").appendChild(document.createElement("div"));
+	d.style.width = "15px";
 }
 
 function getPersonName(index)
