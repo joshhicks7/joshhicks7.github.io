@@ -27,7 +27,7 @@ function newPerson()
 		newDay(id, shortDays[i]);
 	}
 	var d = document.getElementById("Main_Content").appendChild(document.createElement("div"));
-	d.style.width = "50px";
+	d.style.width = "10px";
 	return p;
 
 }

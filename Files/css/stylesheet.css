@@ -35,9 +35,9 @@ body
 
 iframe
 {
-	width:75%;
-	height:90%;
-	border:none;
+	width:95%;
+	height:100%;
 	margin:auto;
+	border:5px solid black;
 	display: block;
 }
