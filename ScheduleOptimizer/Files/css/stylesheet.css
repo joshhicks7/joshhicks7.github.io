@@ -1,0 +1,127 @@
+#Main_Title
+{
+	height: 10%;
+	width:inherit;
+	font-size:30px;
+	text-align:center;	
+    color: white;
+    font-weight: bold;
+}
+
+.dSlot
+{
+	border: 2px solid black;
+	text-align:center;
+	font-weight: bold;
+	color:white;
+	background: clear;
+}
+
+#Main_Content, #ResulsHolder
+{
+	display: flex;
+	justify-content: flex-start;
+	height:600px;
+	flex-wrap: wrap;
+	overflow: scroll;
+}
+
+#Calculations
+{
+
+}
+
+#Day_Holder
+{
+	border:2px solid black;
+}
+
+
+.add_sub
+{
+	width:30px;
+	text-align:center;
+	color:white;
+	background: inherit;
+}
+
+.DELETE_BUTTON
+{
+	margin-left:75%;
+	width:25%;
+	background-color: red;
+	color:white;
+}
+
+.nameInput
+{
+	border:none;
+	text-align:center;
+	margin-left:12%;
+	width:75%;
+}
+
+.tSlot
+{
+	border:1px solid black;
+	background:inherit;
+}
+
+.add_sub_Slot
+{
+	border:1px solid black;
+	background: inherit;
+}
+.person
+{
+	background: grey;
+	padding: 20px;
+	border:1px solid black;
+}
+
+.time,.time_am_pm
+{
+	width:25%;
+	border:none;
+	text-align:center;
+	background: none;
+}
+
+.myTimeDiv
+{
+    width:100px;
+	background:white;
+	display:flex;
+}
+.time#clock
+{
+	background: url('../images/clock.png');
+	background-size: contain;
+	margin-top:3%;
+	margin-left:5%;
+	margin-bottom:3%;
+	background-repeat: no-repeat;
+}
+
+.tInput
+{
+	background: white;
+}
+
+body
+{
+	background-color: lightblue;
+	height:100%;
+}
+
+
+button:focus
+{
+	outline: none;
+	box-shadow:none;
+}
+
+div
+{
+	border-radius:10px;
+}

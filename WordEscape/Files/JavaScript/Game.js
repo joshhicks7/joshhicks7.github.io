@@ -76,7 +76,8 @@ function check()
 	{
 		localStorage.setItem("WordEscape" + theme + ".HighScore", score)
 	}
-	document.getElementById("Score-Container").innerHTML = theme.toUpperCase()  + " HighScore: " + localStorage.getItem("WordEscape" + theme + ".HighScore") +  "&nbsp;  &nbsp; &nbsp;  &nbsp;  " + "Score: " + score;
+
+	document.getElementById("Score-Container").innerHTML = theme.toUpperCase()  + " HighScore: " + localStorage.getItem("WordEscape" + theme + ".HighScore") == 0?"0": localStorage.getItem("WordEscape" + theme + ".HighScore") +  "&nbsp;  &nbsp; &nbsp;  &nbsp;  " + "Score: " + score;
 	document.getElementById("Input-Container").innerHTML = theme.toUpperCase() + ":      " +inputWord;
 
 	if(inputWord[0] == " " || inputWord[0] == "\n")

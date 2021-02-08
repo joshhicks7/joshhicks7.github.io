@@ -1,6 +1,25 @@
 		
 		var amount = 1;
 		
+		//window.onload = SetUp();
+
+
+		function SetUp()
+		{
+			var inputs = document.getElementsByClassName("valSelect");
+			for(var i = 0; i < inputs.length; i++)
+			{
+				var vals = ["nm", "mm", "cm", "m", "dm", "km"];
+				for(var j = 0; j < vals.length; j++)
+				{
+					var op = document.createElement("option");
+					op.value = vals[j];
+					op.innerHTML = vals[j];
+					inputs[i].appendChild(op);
+				}
+
+			}
+		}
 		function calc(id)
 		{
 			

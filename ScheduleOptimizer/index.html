@@ -1,0 +1,64 @@
+<!Doctype HTML>
+<html>
+	<head><title>Schedule Optimizer</title></head>
+	<link rel = "stylesheet" href = "./Files/css/stylesheet.css"></link>
+	<script src = "./Files/javascript/control.js"></script>
+	<script src = "./Files/javascript/TimeStuff.js"></script>
+	<script src = "./Files/javascript/validator.js"></script>
+	<script src = "./Files/javascript/person.js"></script>
+	<body>
+		<h1 id = "Main_Title">WELCOME TO THE SCHEDULE OPTIMIZER</h1>
+		<div>
+			<button onclick = "newPerson()">ADD PERSON</button>
+			<button onclick = "createTimes();ohCrap()">CALCULATE</button>
+			<button onclick = "createTimes();sortAll(); reSortSlots()">SORT</button>
+			<button onclick = "createTimes();cleanAll()">CLEAN</button>
+		</div>
+		<div id = "Main_Content"></div>
+		<div id = "Calculations">
+			<h1 style = "margin:auto; width: inherit; text-align:center">FINAL RESULTS</h1>
+			<div id = "ResultsHolder">
+			</div>
+		<div id = "dayTemplate" display = "hidden">
+			<script type = "text/template">
+					<td class = "dSlot" >Day_Text</td>
+					<td class = "add_sub_Slot">
+						<button onclick = "newTime('my_person','my_day')" class = "add_sub">+</button>
+						<br>
+						<button onclick = "delTime('my_person','my_day')" class = "add_sub">-</button>
+					</td>	
+			</script>
+		</div>
+		<div id = "personTemplate">
+			<script type = "text/template">	
+				<button class = "DELETE_BUTTON" onclick = "delPerson('dPers')" >Delete</button>
+					<input class = "nameInput" type = "text" value = "PERSON 1">
+					<table>
+						<tbody>													
+						</tbody>
+					</table>		
+			</script>
+		</div>
+		<div id = "timeTemplate">
+			<script type="text/template">
+				<input class = "tInput" type="time" id = 'start' value = "00:00" onchange = (checkTime(this.parentNode))>
+				<br>
+				<input class = "tInput" type="time" id = 'end' value = "23:59" onchange = (checkTime(this.parentNode))>
+			</script>
+		</div>
+		<div id = "resultPersonTemplate">
+			<script type = "text/template">
+				<h2>available</h2>
+				<div id = "results">
+					<div id = "p1p2">
+						<table>
+							<tbody>
+							</tbody>	
+						</table>
+					</div>
+				</div>
+
+			</script>
+		</div>		
+	</body>
+</html>
