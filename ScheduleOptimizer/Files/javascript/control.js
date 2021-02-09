@@ -70,18 +70,18 @@ function newDay(p, d, times = null, editable = true)
 	if(times == null)
 	{
 		console.log("nothing here");
-		newTime(p + d,d);
+		newTime(p + d,d,undefined,undefined,editable);
 	}
 	else
 	{
 		if(times.actualStart != null)
 		{
-			newTime(p + d,d,times.actualStart,times.actualEnd);
+			newTime(p + d,d,times.actualStart,times.actualEnd, editable);
 		}
 
 		for(var i = 0; i < times.length; i++)
 		{
-			newTime(p + d,d,times[i].actualStart, times[i].actualEnd);
+			newTime(p + d,d,times[i].actualStart, times[i].actualEnd, editable);
 
 		}
 	}
@@ -91,12 +91,17 @@ function newDay(p, d, times = null, editable = true)
 	return a;
 }
 
-function newTime(p,day,start = "00:00", end = "00:00")
+function newTime(p,day,start = "00:00", end = "00:00", editable = true)
 {
 	var d = document.getElementById(p);
 	var tSlot = document.getElementById("timeTemplate").getElementsByTagName("script")[0].innerHTML;
 	tSlot = tSlot.replace('00:00', start);
 	tSlot = tSlot.replace('23:59', end);
+	if(editable)
+	{
+		tSlot = tSlot.replace('readonly', '');
+		tSlot = tSlot.replace('readonly', '');
+	}
 	var c = document.createElement("td");
 	document.getElementById(p).appendChild(c);
 	c.setAttribute('class', 'tSlot');
