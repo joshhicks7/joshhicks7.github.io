@@ -19,5 +19,7 @@ var My_Snake = new game("My Snake", "I made my own version of snake. Don't worry
 
 var Schedule_Optimizer = new game("Schedule Optimizer", "");
 
+var Resume = new game("Resume", "");
+
 var games = [Gallon_Feet_Conversion, Word_Escape, Rocket_Ship, Vector_Help, My_Snake, Schedule_Optimizer];
 
