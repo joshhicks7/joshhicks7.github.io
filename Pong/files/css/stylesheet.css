@@ -1,0 +1,41 @@
+
+body
+{
+	width:100%;
+	height:100%;
+}
+
+.ball
+{
+	position: absolute;
+	background: blue;
+	border-radius:50%;
+	width:20px;
+	height:20px;
+}
+
+.player
+{
+	width:20px;
+	height:50px;
+	position: absolute;
+}
+
+#canv
+{
+	width:495px;
+	height:495px;
+	background:cyan;
+	border: 5px solid black;
+
+}
+
+#p1
+{
+	background:black;
+}
+
+#p2
+{
+	background:white;
+}

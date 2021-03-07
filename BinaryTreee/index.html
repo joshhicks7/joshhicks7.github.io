@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Binary Search Tree</title>
+	<script src = "./files/javascript/node.js"></script>
+	<script src = "./files/javascript/control.js"></script>	
+	<link rel="stylesheet" type="text/css" href="./files/css/stylesheet.css"></link>
+</head>
+<body>
+	<div id = menu style = 'display: flex'>
+		<table>
+			<tr style = 'color:white'>
+				<td> How Many Elements</td>
+				<td> Highest Number</td>
+				<td><button onclick = "New(parseInt(this.parentNode.parentNode.parentNode.querySelectorAll('input')[2].value))"> New </button></td>
+			</tr>
+			<tr>
+				<td><input type = 'number'></input></td>
+				<td><input type = 'number'></input></td>
+				<td><input type = 'number'></input></td>
+			</tr>	
+				
+			</tr>
+		</table>
+		<button onclick = "add(parseInt(this.parentNode.querySelectorAll('input')[0].value), parseInt(this.parentNode.querySelectorAll('input')[1].value))"> CLICK ME</button>
+		<button onclick = 'scewRight()'>Scew Right</button><button onclick = 'scewLeft()'>Scew Left</button>
+	</div>	
+	<div id = 'nodeHolder'>
+	</div>
+	
+</body>
+
+<div id = "line_template">
+	<script type = "text/template">		
+		<svg width="500" height="500"><line x1="50" y1="50" x2="350" y2="350" stroke="black"/></svg>
+	</script>
+</div>
+</html>

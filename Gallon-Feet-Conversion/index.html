@@ -2,31 +2,48 @@
 <html>
 	<head><title>Gallon-Feet Converter</title></head>
 	<link rel="stylesheet" href="./Files/css/stylesheet.css">
-	<body onkeydown = "go(event)">
+	<body >
 		<div class = "tdiv">
+		    <table>
+				<THEAD ><td colspan="5" style = "text-align:center"><h2>NORMAL CONVERTER</h><td></THEAD>
+				<tbody id = "normal_Table">
+				</tbody>
+			</table>
+			<div style = 'height: 100px'></div>
+			<!--
 			<table>
+				<THEAD ><td colspan="7" style = "text-align:center"><h2>CUBIC CONVERTER</h><td></THEAD>
 				<tbody id = "table">
-					<tr class = "con" id = "con1">
-						<td>
-							<input type="number" id = "fx">
-							<select class = "valSelect"value = "sel"/>
-							 x</td>
-						<td><input type="text" id = "fy"> <select class = "valSelect"value = "sel"/>x</td>
-						<td><input type="text" id = "fz"><select class = "valSelect"value = "sel"/></td>
-						<td id = "click"><button onclick = "calc('con1')" id = "e1">=</button></td>
-						<td id = "cubFeet"></td>
-						<td id = "gallons"></td>
-					</tr>
 				</tbody>
 			</table>
 		</div>
-		<!--<select name="gojosh">
-				<option value="Josh">nm</option>
-				<option value="NotJosh">mm</option>
-				<option value="WhoJosh">km</option>
-		</select>
-		-->
 		<button onclick = "oneMore()" id = "onemore"> ONE MORE</button>
+	-->
+			<script src="./Files/Javascript/conversions.js"></script>
+			<script src="./Files/Javascript/generator.js"></script>		
 	</body>
-	<script src="./Files/Javascript/generator.js"></script>
+
+	<template id = "cubicConverter">
+		<tr class = "con" id = "con1">
+			<td class = "unit_Input">
+				<input type="number" id = "fx"><select class = "valSelect"value = "sel"/></select> x
+			</td>
+			<td class = "unit_Input">
+				<input type="text" id = "fy"> <select class = "valSelect"value = "sel"/></select> x
+			</td>
+			<td class = "unit_Input">
+				<input type="text" id = "fz"><select class = "valSelect"value = "sel"/></select>
+				</td>
+			<td id = "click">
+				<button onclick = "calc('con1')" id = "e1">=</button></td>
+			<td class = "unit_Input">
+				<input type = "text" readonly><select class = "valSelect"value = "sel"/>
+			</td>
+		</tr>
+	</template>
+	<template id = "input_Template">
+			<td class = "unit_Input">
+				<input type="number" id = "fx"><select class = "valSelect"value = "sel"/></select>
+			</td>
+	</template>
 </html>
