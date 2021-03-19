@@ -60,7 +60,6 @@ function createDaySlots()
 function showTimes()
 {	
 	console.log(personTimeSlotArray);
-	//console.log(dayTimeSlotArray);
 }
 
 
@@ -247,7 +246,6 @@ function sortSlots(slotArray)
 	{
 		ar[slotArray[i].start] = slotArray[i];
 	}
-	//console.log(ar);
 	
 	for(var i = 0; i < ar.length; i++)
 	{

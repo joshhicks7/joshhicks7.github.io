@@ -1,0 +1,783 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"star",
+				"startTime"
+			],
+			[
+				"t",
+				"t"
+			],
+			[
+				"getEl",
+				"getElementsByAttribute"
+			],
+			[
+				"que",
+				"querySelector"
+			],
+			[
+				"checked",
+				"checkedOff"
+			],
+			[
+				"qu",
+				"querySelector"
+			],
+			[
+				"arti",
+				"artist_name"
+			],
+			[
+				"atri",
+				"artist_name"
+			],
+			[
+				"tra",
+				"track_id"
+			],
+			[
+				"artist",
+				"artist_longitude"
+			],
+			[
+				"track",
+				"track_title"
+			],
+			[
+				"getEL",
+				"getElementByTagName"
+			],
+			[
+				"getELem",
+				"getElementsByTagName"
+			],
+			[
+				"getEle",
+				"getElementsByTagName"
+			],
+			[
+				"getElem",
+				"getElementById"
+			],
+			[
+				"getelem",
+				"getElementsByClassName"
+			],
+			[
+				"get",
+				"getElementsByClassName"
+			],
+			[
+				"ge",
+				"getElementsByClassName"
+			],
+			[
+				"actu",
+				"actualEnd"
+			],
+			[
+				"getel",
+				"getElementById"
+			],
+			[
+				"content",
+				"align-content\tproperty"
+			],
+			[
+				"clean",
+				"cleanAll"
+			],
+			[
+				"font",
+				"font-weight\tproperty"
+			],
+			[
+				"actual",
+				"actualStart"
+			],
+			[
+				"timeslo",
+				"dayTimeSlotArray"
+			],
+			[
+				"creat",
+				"createTimes"
+			],
+			[
+				"person",
+				"personTimeSlotArray"
+			],
+			[
+				"timeSlo",
+				"personTimeSlotArray"
+			],
+			[
+				"timeSlot",
+				"timeSlotArray"
+			],
+			[
+				"timeSot",
+				"timeSlotArray"
+			],
+			[
+				"times",
+				"timeSlot"
+			],
+			[
+				"Background",
+				"background-repeat\tproperty"
+			],
+			[
+				"wrap",
+				"word-wrap\tproperty"
+			],
+			[
+				"back",
+				"background\tproperty"
+			],
+			[
+				"backg",
+				"background\tproperty"
+			],
+			[
+				"bac",
+				"background\tproperty"
+			],
+			[
+				"l",
+				"ly"
+			],
+			[
+				"backgrou",
+				"background-color\tproperty"
+			],
+			[
+				"offset",
+				"offsetHeight"
+			],
+			[
+				"background",
+				"background-repeat\tproperty"
+			],
+			[
+				"st",
+				"stylesheet"
+			],
+			[
+				"inP",
+				"inPhone"
+			],
+			[
+				"plane",
+				"planeStuff"
+			],
+			[
+				"align",
+				"text-align\tproperty"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 1262,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "files/javascript/control.js",
+			"settings":
+			{
+				"buffer_size": 3584,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/Jhjos/OneDrive/Documents/GitHub/josephfitz7.github.io/ScheduleOptimizer/Files/css/stylesheet.css",
+			"settings":
+			{
+				"buffer_size": 1401,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/Jhjos/OneDrive/Documents/GitHub/josephfitz7.github.io/ScheduleOptimizer/index.html",
+			"settings":
+			{
+				"buffer_size": 2177,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/Jhjos/OneDrive/Documents/GitHub/josephfitz7.github.io/Gallon-Feet-Conversion/Files/Javascript/generator.js",
+			"settings":
+			{
+				"buffer_size": 3786,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/Jhjos/OneDrive/Documents/GitHub/josephfitz7.github.io/ScheduleOptimizer/Files/javascript/TimeStuff.js",
+			"settings":
+			{
+				"buffer_size": 7909,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "files/css/stylesheet.css",
+			"settings":
+			{
+				"buffer_size": 399,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "files/javascript/timeSlot.js",
+			"settings":
+			{
+				"buffer_size": 357,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control:",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 196.0,
+		"history":
+		[
+			"install",
+			"npm start"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/Users/Jhjos/OneDrive/Documents/Sonshine/HTML_Scheduler",
+		"/C/Users/Jhjos/OneDrive/Documents/Sonshine/HTML_Scheduler/files",
+		"/C/Users/Jhjos/OneDrive/Documents/Sonshine/HTML_Scheduler/files/css",
+		"/C/Users/Jhjos/OneDrive/Documents/Sonshine/HTML_Scheduler/files/javascript"
+	],
+	"file_history":
+	[
+		"/C/Users/Jhjos/OneDrive/Documents/GitHub/josephfitz7.github.io/Gallon-Feet-Conversion/index.html",
+		"/C/Users/Jhjos/OneDrive/Documents/GitHub/josephfitz7.github.io/ScheduleOptimizer/Files/javascript/TimeStuff.js",
+		"/C/Users/Jhjos/OneDrive/Documents/GitHub/josephfitz7.github.io/ScheduleOptimizer/Files/javascript/control.js",
+		"/C/Users/Jhjos/OneDrive/Documents/GitHub/josephfitz7.github.io/ScheduleOptimizer/Files/javascript/person.js",
+		"/C/Users/Jhjos/OneDrive/Documents/Sonshine/HTML_Scheduler/index.html",
+		"/C/Users/Jhjos/OneDrive/Documents/Sonshine/HTML_Scheduler/index.sublime-project",
+		"/C/Users/Jhjos/OneDrive/Documents/GitHub/josephfitz7.github.io/Gallon-Feet-Conversion/Files/Javascript/generator.js",
+		"/C/Users/Jhjos/OneDrive/Documents/GitHub/josephfitz7.github.io/ScheduleOptimizer/index.html",
+		"/C/Users/Jhjos/OneDrive/Documents/Programming/Html/MySnake/index.html",
+		"/C/Users/Jhjos/OneDrive/Documents/Programming/Games/Unity Games/CourseGenerator/CourseGenerator/Assets/Scripts/UIS/Grid.cs",
+		"/C/Users/Jhjos/OneDrive/Documents/Programming/Games/Unity Games/Memory/Assets/Scripts/MyImage.cs",
+		"/C/Users/Jhjos/OneDrive/Documents/Programming/Games/Unity Games/Memory/Assets/Scripts/Drawing/Paintable.cs",
+		"/C/Users/Jhjos/OneDrive/Documents/Programming/Games/Unity Games/CourseGenerator/CourseGenerator/Assets/Scripts/UIS/MyDropDown.cs",
+		"/C/Users/Jhjos/OneDrive/Documents/GitHub/josephfitz7.github.io/Gallon-Feet-Conversion/Files/Javascript/conversions.js",
+		"/C/Users/Jhjos/OneDrive/Documents/Programming/Games/Unity Games/CourseGenerator/CourseGenerator/Assets/Scripts/UIS/FlexibleGridLayout.cs",
+		"/C/Users/Jhjos/OneDrive/Documents/GitHub/josephfitz7.github.io/Gallon-Feet-Conversion/Files/css/stylesheet.css",
+		"/C/Users/Jhjos/OneDrive/Documents/GitHub/josephfitz7.github.io/Gallon-Feet-Conversion/debug.log",
+		"/C/Users/Jhjos/OneDrive/Desktop/Budget.cs",
+		"/C/Users/Jhjos/OneDrive/Desktop/House.js",
+		"/C/Users/Jhjos/OneDrive/Documents/Programming/Games/Unity Games/RPS_Roundup/Assets/Scripts/LevelOld.cs",
+		"/C/Users/Jhjos/OneDrive/Documents/Programming/Games/Unity Games/RPS_Roundup/Assets/Scripts/LevelManager.cs",
+		"/C/Users/Jhjos/OneDrive/Documents/Programming/Html/Snake2/files/css/stylesheet.css",
+		"/C/Users/Jhjos/OneDrive/Documents/Programming/Html/Snake2/index.html",
+		"/C/Users/Jhjos/OneDrive/Documents/Programming/Html/Snake2/files/javascript/control.js",
+		"/C/Users/Jhjos/OneDrive/Documents/Programming/Games/React/my-app/src/App.js",
+		"/C/Users/Jhjos/OneDrive/Documents/Resume/Cover Letters/acxiom_scholarship.txt",
+		"/C/Users/Jhjos/OneDrive/Documents/Programming/Games/React/my-app/src/AppTest/AppTest.jsx",
+		"/C/Users/Jhjos/.atom/compile-cache/coffee/0aa7603dcced49d28edd30be7a8d9c7b60661316.js",
+		"/C/Users/Jhjos/OneDrive/Documents/Programming/Games/React/my-app/src/AppTest/AppTest.css",
+		"/C/Users/Jhjos/OneDrive/Documents/GitHub/josephfitz7.github.io/BinaryTreee/files/javascript/node.js",
+		"/C/Users/Jhjos/OneDrive/Documents/GitHub/josephfitz7.github.io/BinaryTreee/files/javascript/control.js",
+		"/C/Users/Jhjos/OneDrive/Documents/GitHub/josephfitz7.github.io/BinaryTreee/files/css/stylesheet.css",
+		"/C/Users/Jhjos/OneDrive/Documents/GitHub/josephfitz7.github.io/BinaryTreee/index.html",
+		"/C/Users/Jhjos/OneDrive/Documents/Programming/JavaTestCodes/Clem Coding Interviews/SchoolBlockThings/SchoolBlock.java",
+		"/C/Users/Jhjos/OneDrive/Documents/GitHub/josephfitz7.github.io/index.html",
+		"/C/Users/Jhjos/OneDrive/Documents/GitHub/josephfitz7.github.io/Pong/index.html",
+		"/C/Users/Jhjos/OneDrive/Documents/GitHub/josephfitz7.github.io/Pong/files/css/stylesheet.css",
+		"/C/Users/Jhjos/OneDrive/Documents/GitHub/josephfitz7.github.io/Pong/files/javascript/control.js",
+		"/C/Users/Jhjos/OneDrive/Documents/uca/Spring21/Java/eclipse(1)/eclipse/workspaces/Project1/project1package/Playlist.java",
+		"/C/Users/Jhjos/OneDrive/Documents/uca/Spring21/Java/eclipse(1)/eclipse/workspaces/Project1/project1package/Tester.java",
+		"/C/Users/Jhjos/OneDrive/Documents/uca/Spring21/Java/eclipse(1)/eclipse/workspaces/Project1/project1package/Song.java",
+		"/C/Users/Jhjos/OneDrive/Documents/GitHub/josephfitz7.github.io/Files/css/stylesheet.css",
+		"/C/Users/Jhjos/OneDrive/Documents/GitHub/josephfitz7.github.io/WordEscape/Files/JavaScript/words.js",
+		"/C/Users/Jhjos/OneDrive/Documents/GitHub/josephfitz7.github.io/WordEscape/index.html",
+		"/C/Users/Jhjos/OneDrive/Documents/GitHub/josephfitz7.github.io/Files/Javascript/types.js",
+		"/C/Users/Jhjos/OneDrive/Documents/GitHub/josephfitz7.github.io/Files/Javascript/controls.js",
+		"/C/Users/Jhjos/OneDrive/Documents/GitHub/josephfitz7.github.io/Resume/resume.html",
+		"/C/Users/Jhjos/OneDrive/Documents/GitHub/josephfitz7.github.io/Resume/index.html",
+		"/C/Users/Jhjos/OneDrive/Documents/uca/Spring21/Com_Arch/Projects/1/index.html",
+		"/C/Users/Jhjos/OneDrive/Documents/Programming/Html/Schedule optimizer/Files/javascript/TimeStuff.js",
+		"/C/Users/Jhjos/OneDrive/Documents/Programming/Html/Schedule optimizer/Files/javascript/validator.js",
+		"/C/Users/Jhjos/OneDrive/Documents/Programming/Html/Schedule optimizer/index.html",
+		"/C/Users/Jhjos/OneDrive/Documents/Programming/Html/Schedule optimizer/Files/css/stylesheet.css",
+		"/C/Users/Jhjos/OneDrive/Documents/GitHub/josephfitz7.github.io/ScheduleOptimizer/Files/css/stylesheet.css",
+		"/C/Users/Jhjos/OneDrive/Documents/Programming/Html/Schedule optimizer/Files/javascript/control.js",
+		"/C/Users/Jhjos/OneDrive/Documents/Programming/Html/Schedule optimizer/Files/javascript/person.js",
+		"/C/Users/Jhjos/OneDrive/Documents/Programming/Html/Schedule optimizer/Files/javascript/validator",
+		"/C/Users/Jhjos/OneDrive/Documents/GitHub/josephfitz7.github.io/MySnake/Files/css/stylesheet.css",
+		"/C/Users/Jhjos/OneDrive/Documents/GitHub/josephfitz7.github.io/MySnake/Files/Javascript/control.js",
+		"/C/Users/Jhjos/OneDrive/Documents/GitHub/josephfitz7.github.io/WordEscape/Files/JavaScript/Game.js",
+		"/C/Users/Jhjos/OneDrive/Documents/GitHub/josephfitz7.github.io/Vector_Help/index.html",
+		"/C/Users/Jhjos/OneDrive/Documents/GitHub/josephfitz7.github.io/WordEscape/Files/css/stylesheet.css",
+		"/C/Users/Jhjos/OneDrive/Documents/GitHub/josephfitz7.github.io/MySnake/index.html",
+		"/C/Users/Jhjos/OneDrive/Documents/Programming/Html/MySnake/Files/Javascript/control.js",
+		"/C/Users/Jhjos/OneDrive/Documents/GitHub/josephfitz7.github.io/RocketShip/Files/Snake.css",
+		"/C/Users/Jhjos/OneDrive/Documents/Programming/Html/place/Files/Game.js",
+		"/C/Users/Jhjos/OneDrive/Documents/GitHub/josephfitz7.github.io/RocketShip/Files/ActionScript.js",
+		"/C/Users/Jhjos/OneDrive/Documents/GitHub/josephfitz7.github.io/RocketShip/Files/SnakeScript.js",
+		"/C/Users/Jhjos/OneDrive/Documents/GitHub/josephfitz7.github.io/RocketShip/Files/keyInputs.js",
+		"/C/Users/Jhjos/OneDrive/Documents/GitHub/josephfitz7.github.io/rocketShip/Files/Initialization.js",
+		"/C/Users/Jhjos/OneDrive/Documents/GitHub/josephfitz7.github.io/rocketShip/Files/ActionScript.js",
+		"/C/Users/Jhjos/OneDrive/Documents/GitHub/josephfitz7.github.io/rocketShip/Files/SnakeScript.js",
+		"/C/Users/Jhjos/OneDrive/Documents/Programming/JavaTestCodes/Calculator/Calculator.java",
+		"/C/Users/Jhjos/OneDrive/Documents/uca/Fall20/CAL2/Vectors/HTML_HELP/index.html",
+		"/C/Users/Jhjos/OneDrive/Documents/uca/Fall20/Assembly/Assignments/8/Hicks-Josh-Assignment8.asm",
+		"/C/Users/Jhjos/OneDrive/Documents/uca/Fall20/Assembly/Assignments/8/Hicks-Josh-Assignment7.asm",
+		"/C/Users/Jhjos/OneDrive/Documents/uca/Fall20/Assembly/Assignments/7/Hicks-Josh-Assignment7.asm",
+		"/C/Users/Jhjos/OneDrive/Documents/uca/Fall20/Assembly/Assignments/7/Hicks-Josh-Assignment7",
+		"/C/Users/Jhjos/OneDrive/Documents/uca/Fall20/Assembly/Mips/Projects/Exampls.asm",
+		"/C/Users/Jhjos/OneDrive/Documents/Programming/Html/InsertHtmlTest/index.html",
+		"/C/Users/Jhjos/OneDrive/Documents/Programming/index.php",
+		"/C/Users/Jhjos/OneDrive/Documents/Programming/Html/InsertHtmlTest/Files/html/edit.html",
+		"/C/Users/Jhjos/OneDrive/Documents/uca/Fall20/Assembly/open.js",
+		"/C/Users/Jhjos/OneDrive/Documents/Programming/Html/rocketShip/Files/Initialization.js",
+		"/C/Users/Jhjos/OneDrive/Documents/Programming/Html/rocketShip/Files/animations.js",
+		"/C/Users/Jhjos/OneDrive/Documents/Programming/Html/rocketShip/Files/keyInputs.js",
+		"/C/Users/Jhjos/OneDrive/Documents/Programming/Html/rocketShip/Files/SnakeScript.js",
+		"/C/Users/Jhjos/OneDrive/Documents/Programming/Html/rocketShip/Files/ActionScript.js",
+		"/C/Users/Jhjos/OneDrive/Documents/Asseco/Questions.cs",
+		"/C/Users/Jhjos/OneDrive/Documents/Games/Unity Games/CourseGenerator/CourseGenerator/Builds/v1/CourseGenerator_Data/Resources/unity default resources",
+		"/C/Users/Jhjos/OneDrive/Documents/uca/Fall20/Assembly/Labs/Lab11/Hicks-Josh-Lab11.asm",
+		"/C/Users/Jhjos/OneDrive/Documents/uca/Fall20/Assembly/Labs/Lab12/Hicks-Josh-Lab12.asm",
+		"/C/Users/Jhjos/OneDrive/Documents/Programming/python/new.py",
+		"/C/Users/Jhjos/OneDrive/Documents/uca/Fall20/Assembly/Labs/Lab13/Hicks-Josh-Lab13.asm",
+		"/C/Users/Jhjos/OneDrive/Documents/uca/Fall20/Assembly/Assignments/6/Hicks-Josh-Assignment6.asm",
+		"/C/Users/Jhjos/OneDrive/Documents/Programming/Mips/Arrays/FirstArray.asm",
+		"/C/Users/Jhjos/OneDrive/Documents/Programming/python/Summation/Summation.py",
+		"/C/Users/Jhjos/OneDrive/Documents/Programming/JavaTestCodes/Summation/Summation.java",
+		"/C/Users/Jhjos/OneDrive/Documents/Programming/JavaTestCodes/Box/Box.java"
+	],
+	"find":
+	{
+		"height": 74.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			"}\n",
+			"SetUp"
+		],
+		"highlight": false,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1262,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								176,
+								176
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 1,
+					"file": "files/javascript/control.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3584,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1428,
+								1428
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 540.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/C/Users/Jhjos/OneDrive/Documents/GitHub/josephfitz7.github.io/ScheduleOptimizer/Files/css/stylesheet.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1401,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								316,
+								316
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 117.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/C/Users/Jhjos/OneDrive/Documents/GitHub/josephfitz7.github.io/ScheduleOptimizer/index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2177,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								766,
+								778
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "/C/Users/Jhjos/OneDrive/Documents/GitHub/josephfitz7.github.io/Gallon-Feet-Conversion/Files/Javascript/generator.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3786,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3164,
+								3164
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 2191.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "/C/Users/Jhjos/OneDrive/Documents/GitHub/josephfitz7.github.io/ScheduleOptimizer/Files/javascript/TimeStuff.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7909,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4755,
+								5023
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1890.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 6,
+					"file": "files/css/stylesheet.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 399,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								236,
+								236
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 135.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "files/javascript/timeSlot.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 357,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								16,
+								16
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 31.0
+	},
+	"input":
+	{
+		"height": 58.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				0,
+				1,
+				1,
+				2
+			],
+			[
+				0,
+				2,
+				1,
+				3
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			0.324466338259,
+			0.382266009852,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "index.sublime-project",
+	"replace":
+	{
+		"height": 58.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 2,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 212.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

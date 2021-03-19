@@ -1,0 +1,90 @@
+#MySlots
+{
+	display:flex;
+	flex-wrap:wrap;
+
+}
+
+
+#dayHolder
+{
+	display: inline-flex;
+	width:2500px;
+	flex-wrap:wrap;
+}
+
+.innerDayHolder
+{
+	width:98%;
+	height:1500px;
+	position: relative;
+	display: table;
+	margin:auto;
+}
+
+.DaySlot
+{
+	border: 2px solid black;
+	position: relative;
+	width:14%;
+	text-align:center;
+}
+
+.dayTitle
+{
+	border: 1px solid black;
+}
+
+.TimeSlot
+{
+	left:0px;
+	position: absolute;
+	width:75px;
+	border: 1px solid black;
+	font-size: 10px;
+}
+.Ref
+{
+	background-color:white;
+	width:585px;
+
+}
+
+.AdditionalTime
+{
+	border: 1px solid black;
+	margin: 5px 10px;
+	padding: 10px 10px;
+}
+body
+{
+	height:95vh;
+}
+
+#stats
+{
+	display:flex;
+	flex-wrap:wrap;
+}
+#stats > *
+{	
+	border: 1px solid black;
+	padding:10px;
+}
+
+#toast
+{
+	visibility: hidden;
+	position: fixed;
+	left:45%;
+	bottom: 30px;
+	width: 10%;
+	height: 50px;
+	background-color:#505050;
+	color:white;
+}
+
+#headerStuff > *
+{
+	margin: 20px 10px;
+}

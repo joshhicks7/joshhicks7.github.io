@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Class Scheduler</title>
+
+</head>
+<link rel="stylesheet" href = "./files/css/stylesheet.css"></link>
+<body>
+	<h1 style = "text-align:center"> CLASS SCHEDULE </h1>
+	<h2 id = "fileName"></h2>
+	<div id = "headerStuff">
+		<input type = "file" accept = ".csv" onchange="upload(event)">
+		<button onclick = "AddInputSlotNo()">ADD CLASS</button>
+		<select name="sortOptions" id="sortOptions" onchange = "SortByOption(this.value)">
+			<option value="Time">Order By Time</option>
+			<option value="Name">Order By Class Name</option>
+			<option value="All">Order By All</option>
+		</select>
+		<button onclick = "GenerateAll()">Generate</button>
+		<button onclick = "download()">Download</button>
+		<div id = "stats"></div>
+	</div>
+	<div id = "MySlots">
+		
+	</div>
+	<div id = "dayHolder">
+		
+	</div>	
+	<div id = "toast">
+	</div>
+	<script src = "./files/javascript/timeSlot.js"> </script>
+	<script src = "./files/javascript/control.js"> </script>
+	
+</body>
+
+<template id = "addTimeTemplate">
+	<div class = "AdditionalTime">
+			<input type="text" placeholder="Name">
+			<select>
+				<option value="Sunday">Sunday</option>
+				<option value="Monday">Monday</option>
+				<option value="Tuesday">Tuesday</option>
+				<option value="Wednesday">Wednesday</option>
+				<option value="Thursday">Thursday</option>
+				<option value="Friday">Friday</option>
+				<option value="Saturday">Saturday</option>
+			</select>
+			<input type="time" value = "12:00" min = "08:00" max = "22:00" oninput="checkTime(this)">
+			<input type="time" value = "12:00" min = "08:00" max = "22:00" oninput="checkTime(this)">
+			<button onclick = "duplicate(this.parentNode)">Copy</button>
+			<button onclick = "this.parentNode.remove()">Delete</button>
+	</div>
+</template>
+<template id = "dayTemplate">
+	<div class = "DaySlot">
+		<div class = "dayTitle" onclick = "ShowCountInDay(this.parentNode)"><h1>Monday</h1></div>
+		<div class = "innerDayHolder"></div>
+    </div>
+</template>
+<template id = "timeSlotTemplate">
+	<div class = "TimeSlot">
+		<div>title</div>
+		<div>times</div>
+	</div>
+</template>
+</html>
