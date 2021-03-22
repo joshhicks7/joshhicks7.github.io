@@ -2,10 +2,20 @@
 <html>
 <head>
 	<title>RPS Roundup</title>
+	<link rel="stylesheet" type="text/css" href="./files/css/stylesheet.css"></link>
 </head>
 <body>
 	<h1 style = "text-align: center">Information / Privacy Policy</h1>
 	<h2 style = "text-align: center">We do not collect any user information. Have fun with your day.</h2>
 
+	<form onsubmit = "mail()" style = "">
+		<div>Questions?</div>
+		<textarea id = "questionArea" maxlength = "100" oninput="editedText()"></textarea>
+		<div id = "wordCounts">word count</div>		
+		<!--<tr><td>Screenshot?</td><td><input type = "file" accept = "image/*"></td></tr>-->
+		<input type="submit" value = "Submit">
+		
+	</form>
 </body>
+<script type = "text/javascript" src = "./files/javascript/control.js"></script>
 </html>
