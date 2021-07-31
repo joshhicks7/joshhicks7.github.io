@@ -17,7 +17,7 @@ var Vector_Help = new game("Vector_Help", "Have you ever taken calculus in the c
 
 var My_Snake = new game("My Snake", "I made my own version of snake. Don't worry about walls. They won't hurt you. The only thing that will hurt you is you. Look out for the portals. They're a doosey. Eat the candy, and make it far.");
 
-var Schedule_Optimizer = new game("Schedule Optimizer", "");
+var Schedule_Optimizer = new game("Schedule Optimizer", "This is something that I am very proud of. It allows someone to enter multiple peoples schedules, and it shows when each person's schedules overlap. This would be great for availabilities.");
 
 var Resume = new game("Resume", "");
 
